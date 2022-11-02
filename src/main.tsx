@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import HomeLayout from "./layouts/HomeLayout";
+import HomeLayout from "./layouts/HomeLayout/HomeLayout";
 import BaseLayout from "./layouts/BaseLayout";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import "./styles/app.css";
