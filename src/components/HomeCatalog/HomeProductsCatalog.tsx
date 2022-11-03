@@ -20,7 +20,6 @@ export default function HomeProductsCatalog({ products }: ProductsProps) {
           <div key={id}>
             <h1>{title} </h1>
             <img src={image} alt='title' width={80} height={80} />
-            <p>{description} </p>
             <p>{price} </p>
           </div>
         );
