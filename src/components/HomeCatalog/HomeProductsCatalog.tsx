@@ -1,10 +1,10 @@
+import ProductCard from "../ProductCard/ProductCard";
 import styles from "./HomeProductsCatalog.module.css";
 
 type Product = {
   id: number;
   title: string;
   price: string;
-  description: string;
   image: string;
 };
 
@@ -15,13 +15,13 @@ interface ProductsProps {
 export default function HomeProductsCatalog({ products }: ProductsProps) {
   return (
     <section className={styles.home_catalog}>
-      {products.map(({ title, description, price, id, image }: Product) => {
+      {products.map(({ title, price, id, image }: Product) => {
         return (
-          <div key={id}>
-            <h1>{title} </h1>
-            <img src={image} alt='title' width={80} height={80} />
-            <p>{price} </p>
-          </div>
+          <ProductCard
+            id={id}
+            title={title}
+            price={price}
+            img={image}></ProductCard>
         );
       })}
     </section>

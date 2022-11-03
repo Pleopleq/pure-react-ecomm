@@ -2,7 +2,7 @@ interface ProductProps {
   id: number;
   title: string;
   img: string;
-  price: number;
+  price: number | string;
 }
 
 export default function ProductCard({ id, title, img, price }: ProductProps) {
