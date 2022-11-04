@@ -18,6 +18,7 @@ export default function HomeProductsCatalog({ products }: ProductsProps) {
       {products.map(({ title, price, id, image }: Product) => {
         return (
           <ProductCard
+            key={id}
             id={id}
             title={title}
             price={price}
