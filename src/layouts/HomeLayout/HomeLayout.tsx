@@ -2,10 +2,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import HomeProductsCatalog from "../../components/HomeCatalog/HomeProductsCatalog";
 import styles from "./HomeLayout.module.css";
-import useFetchHomeProducts from "../../hooks/useFetchHomeProducts";
+import useFetchProducts from "../../hooks/useFetchProducts";
 
 export default function HomeLayout() {
-  const products = useFetchHomeProducts("https://fakestoreapi.com/products");
+  const products = useFetchProducts("https://fakestoreapi.com/products");
 
   return (
     <main>
