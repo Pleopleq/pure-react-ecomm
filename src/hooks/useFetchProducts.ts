@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useFetchHomeProducts = (url: string, limit = 9) => {
+const useFetchProducts = (url: string, limit = 9) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -12,4 +12,4 @@ const useFetchHomeProducts = (url: string, limit = 9) => {
   return products;
 };
 
-export default useFetchHomeProducts;
+export default useFetchProducts;
